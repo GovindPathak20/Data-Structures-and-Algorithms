@@ -58,3 +58,12 @@ int main(){
 
 // Space Complexity: O(n) + O(n) (stack + visited array)
 // Time Complexity: O(V + E)
+
+// Input
+// 6 6
+// 5 2
+// 2 3
+// 3 1
+// 4 1
+// 4 0
+// 5 0
