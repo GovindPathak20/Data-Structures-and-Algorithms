@@ -6,11 +6,13 @@ a.out
 *.obj
 *.dSYM/
 
-# Ignore executables with no extension (macOS / Linux)
-# (most CP binaries)
+# Ignore everything by default
 *
 
-# Allow source & important files back
+# Allow directories
+!*/
+
+# Allow source & important files
 !*.cpp
 !*.h
 !*.hpp
