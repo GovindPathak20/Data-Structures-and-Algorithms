@@ -1,0 +1,24 @@
+# ===== C++ build artifacts =====
+a.out
+*.out
+*.exe
+*.o
+*.obj
+*.dSYM/
+
+# Ignore executables with no extension (macOS / Linux)
+# (most CP binaries)
+*
+
+# Allow source & important files back
+!*.cpp
+!*.h
+!*.hpp
+!*.md
+!*.txt
+!.gitignore
+!README.md
+
+# ===== Editor / OS files =====
+.vscode/
+.DS_Store
