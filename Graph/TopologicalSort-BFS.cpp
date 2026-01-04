@@ -19,7 +19,7 @@
 // 1. Find the indegree of all the nodes and store that in an array
 // 2. Take a queue and insert all the nodes in the queue whose indegree is 0
 // 3. Take these nodes out of the queue one by one and decrement the indegree of the adjacent nodes
-// 4. If the indegree of the adjacent nodes become 0 then simply insert these nodes inside the queue as the nodes which be coming in ordering before them would have already been taken out
+// 4. If the indegree of the adjacent nodes become 0 then simply insert these nodes inside the queue as the nodes which will be coming in ordering before them would have already been taken out
 
 #include<bits/stdc++.h>
 using namespace std;
