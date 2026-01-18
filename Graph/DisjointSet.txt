@@ -1,0 +1,30 @@
+Example Usage of Disjoint Set Data Structue:
+
+Imagine a graph having two components like below:
+1->2->3->4
+5->6->7
+Scenario: If we need to find if 1 and 5 belog to the same component or not.
+Solution: We will try to run a DFS from 1 and if we are able to visit 5 then it belongs to the same component otherwise not
+This is a brute force solution with time complexity as O(N + E)
+DisjointSet Solution: This problem can be solved in constant time with the help of Disjoint Set data structure
+
+DisjointSet -> Mostly used in Dynamic Graphs (Graphs that keep on changing their configuration at every moment)
+
+DisjointSet gives us the following two functionalities:
+1. findParent()
+2. Union() -> It can be done by two methods rank or size
+
+Dynamic Graphs Example:
+(1,2)
+(2,3)
+(4,5)
+(6,7)
+(5,6)
+(3,7)
+
+Initially we will assume that all these nodes are alone
+As the edges keep on coming we will connect these vertices as they come by doing their Union
+But in this way only the graph is formed => But using DSU at any point of time we can tell if two nodes belong in the same component or not => This operation can be done in constant time
+In DisjointSet if we say that we want to connect 1 and 2 then we will do => Union(1,2)
+
+
