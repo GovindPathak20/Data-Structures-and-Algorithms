@@ -78,3 +78,5 @@ int main(){
 
     return 0;
 }
+
+// Time Complexity: O(4 * alpha) => O(constant)
