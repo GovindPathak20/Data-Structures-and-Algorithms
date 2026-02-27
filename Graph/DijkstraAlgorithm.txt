@@ -1,0 +1,17 @@
+Dijkstra Algorithm -> Most important algorithm to solve shortest path problem in a graph with non-negative edge weights
+Problem Statement: Given a graph with n nodes and m edges, find the shortest path from a source node to all other nodes in the graph.
+Adjacency List Representation of the graph:
+0 -> [1,4], [2,4]
+1 -> [0.4], [2,2]
+2 -> [0,4], [1,2], [3,3], [4,1], [5,6]
+3 -> [2,3], [5,2]
+4 -> [2,1], [5,3]
+5 -> [2,6], [3,2], [4,3]
+Algorithm:
+1. We will take a min heap to store the (dis, node) and a distance array to store the shortest distance from the source node to all other nodes in the graph.
+2. As we are storing the (dis, node) in the min heap, the shorter distance will always be at the top of the min heap.
+3. Now assign the source node distance as 0 and push the (0, source) in the min heap.
+4. Now pop the top element from the min heap and mark it as visited.
+5. Now look at all the nodes that are directly connected to the popped node and update their distance if the distance from the source node to the child node is less than the current distance
+6. If the distance is updated, then push the (dis, child) in the min heap.
+7. Repeat the process until the min heap is empty.
