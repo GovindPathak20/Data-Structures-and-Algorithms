@@ -51,3 +51,9 @@ int main(){
     }
     cout << ans << endl;
 }
+
+// Input:
+// 3 3
+// 0 1 5
+// 1 2 3
+// 0 2 1
