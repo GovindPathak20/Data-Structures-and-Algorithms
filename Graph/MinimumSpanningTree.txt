@@ -1,0 +1,11 @@
+Minimum Spanning Tree -> MST
+
+0 -> [1,2], [3,6]
+1 -> [0,2], [3,8], [4,5], [2,3]
+2 -> [1,3], [4,7]
+3 -> [0,6], [1,8]
+4 -> [1,5], [2,7]
+
+Spanning Tree -> A tree in which we have N nodes and N-1 edges and all nodes are reachable from each other
+In this undirected weighted graph the tree which will have the sum of the edge weights as minimum will be the MST of this undirected graph
+
