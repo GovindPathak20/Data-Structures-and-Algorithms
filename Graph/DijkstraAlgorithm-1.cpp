@@ -1,3 +1,5 @@
+// Dijkstra Algorithm implementation using priority queue
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -37,3 +39,13 @@ int main(){
 
     return 0;
 }
+
+// Input:
+// 5 6
+// 0 1 2
+// 0 2 4
+// 1 2 1
+// 1 3 7
+// 2 4 3
+// 3 4 2
+// 0
