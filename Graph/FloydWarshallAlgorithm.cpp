@@ -59,3 +59,14 @@ int main(){
 
     return 0;
 }
+
+// Input:
+// 4 5
+// 0 1 3
+// 0 2 1
+// 1 2 7
+// 1 3 5
+// 2 3 2
+
+// Time Complexity: O(V^3)
+// Space Complexity: O(V^2)
