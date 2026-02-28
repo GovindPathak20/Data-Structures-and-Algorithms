@@ -1,0 +1,8 @@
+Floyd Warshall Algorithm -> Multisource shortest path algorithm
+It helps to detect negative weight cycles
+Go via every vertex to the resultant vertex and always keep track of the minimum distance
+d[i][j] = min(d[i][k] + d[k][j])
+We will be having a cost matrix to store the shortest distance from one node to another particular node
+cost[node][node] = 0 -> this cost will be always 0 in the cost matrix
+In the cost matrix after initializing the above also assign the cost between two edges if there is an edge between them and every other remaining value in the matrix as infinity
+To implement in an undirected graph convert it into a directed graph
