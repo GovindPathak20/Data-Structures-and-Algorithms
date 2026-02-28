@@ -49,3 +49,9 @@ int main(){
 // 2 4 3
 // 3 4 2
 // 0
+
+// Why Dijkstra's algorithm is not suitable for negative weight edges?
+// Dijkstra's algorithm is not suitable for negative weight edges because it relies on the principle of "greedy choice". The algorithm assumes that once a node's shortest path is determined, it will not change. However, if there are negative weight edges, it is possible for a shorter path to be found after a node has already been marked as visited, which can lead to incorrect results. In such cases, algorithms like Bellman-Ford are more appropriate as they can handle negative weight edges effectively
+// 0 -> [1, -2] -> In this example the distance of the resultant node reduces in every iteration so it goes on into an infinite loop
+// Time Complexity: O(E log V) where E is the number of edges and V is the number of vertices in the graph. This is because we are using a priority queue to store the edges and we are processing each edge at most once. The log V factor comes from the time taken to insert and remove elements from the priority queue.
+// Space Complexity: O(V) where V is the number of vertices in the graph. This is because we are using a distance array to store the shortest distance from the source node to each vertex in the graph. Additionally, the priority queue can also hold up to O(V) elements in the worst case, but this is typically considered part of the space complexity of the algorithm.

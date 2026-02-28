@@ -57,3 +57,7 @@ int main(){
 // 0 1 5
 // 1 2 3
 // 0 2 1
+
+// Time and Space Complexity:
+// Time Complexity: O((V + E) log V) where V is the number of vertices and E is the number of edges in the graph. This is because we are using a priority queue to store the edges and we are processing each edge at most once.
+// Space Complexity: O(V + E) where V is the number of vertices and E is the number of edges in the graph. This is because we are storing the graph in an adjacency list and we are also using a visited array to keep track of the visited nodes.
