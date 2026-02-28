@@ -1,0 +1,4 @@
+Bellman Ford Algorithm -> This algorithm is also used to find the shortest path from the source node to other nodes.
+The only difference is that Dijkstra fails if the graph contains negative edges and it gives TLE if the graph contains negative weight cycles.
+Bellman Ford Algorithm also helps us to detect negative weight cycles
+Bellman Form Algorithm is applicabe on a directed graph, to implment on an undirected graph convert it into a directed graph
