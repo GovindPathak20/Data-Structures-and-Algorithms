@@ -25,14 +25,6 @@ int main(){
         // dist[v][u] = w; // Uncomment this line for undirected graph
     }
 
-    // For negative weight cycles, we can check if dist[i][i] < 0 after the algorithm runs. If it is, then there is a negative weight cycle in the graph.
-    for(int k = 0; k < V; k++) {
-        if (dist[k][k] < 0) {
-            cout << "Negative weight cycle detected!" << endl;
-            return 0;
-        }
-    }
-
     // Floyd Warshall Algorithm
     for (int k = 0; k < V; k++) {
         for (int i = 0; i < V; i++) {
@@ -41,6 +33,14 @@ int main(){
                     dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                 }
             }
+        }
+    }
+
+    // For negative cycle detection (optional)
+    for (int i = 0; i < V; i++) {
+        if (dist[i][i] < 0) {
+            cout << "Negative cycle detected!" << endl;
+            return 0;
         }
     }
 
