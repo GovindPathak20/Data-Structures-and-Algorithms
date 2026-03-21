@@ -30,3 +30,10 @@ int main(){
 
 // Node *head = new Node(10);
 // address store      heap par node banao
+
+// -> Operator in C++
+// -> pointer k through kisi struct/class k member ko access karta hai
+// head->data => head jo address ko point kar rha hai, us Node k andar jao aur data lo
+// Pointer (heap pe) - arrow operator use karo
+// Node *p = new Node(10);
+// cout << p->data << " ";
