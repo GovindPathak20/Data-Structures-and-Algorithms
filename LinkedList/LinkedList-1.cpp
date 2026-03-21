@@ -24,3 +24,9 @@ int main(){
 
     return 0;
 }
+
+// new Keyword in C++
+// new heap pe memory allocate karta hai aur us memory ka address return karta hai
+
+// Node *head = new Node(10);
+// address store      heap par node banao
